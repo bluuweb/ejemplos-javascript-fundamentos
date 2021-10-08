@@ -10,18 +10,18 @@
 
 <body>
     <script>
-        const frutas = []
+        const carrito = []
         const fruta = prompt('🍒 Feria Market 🍉 ¿qué fruta desea comprar?')
 
-        frutas.push(fruta)
+        carrito.push(fruta)
 
         while (confirm('¿Desea agregar otro elemento al 🛒?')) {
             const fruta = prompt('¿qué fruta desea comprar?')
-            frutas.push(fruta)
+            carrito.push(fruta)
         }
 
         console.log('Ustede compró: ')
-        for (let fruta of frutas) {
+        for (let fruta of carrito) {
             console.log(fruta)
         }
     </script>
